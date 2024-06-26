@@ -2,6 +2,8 @@
 # | CNN for Paddy-Doctor-Dataset |
 # +------------------------------+
 
+# test accuracy = 56.73076923076923
+
 import torch.nn as nn
 import torch
 from torchvision import datasets, transforms
@@ -10,7 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 input_size = 65536*3
-epochs = 2
+epochs = 10
 learning_rate = 0.001
 batch_size = 32
 
