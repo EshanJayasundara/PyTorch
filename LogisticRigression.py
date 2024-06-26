@@ -50,7 +50,7 @@ model = LogisticRegression(n_features)
 
 # loss and optimizer
 learning_rate = 0.01
-criterion = nn.BCELoss()
+criterion = nn.BCELoss() # Binary Cross Entropy Loss
 optimizer = torch.optim.SGD(model.parameters(), lr = learning_rate)
 
 # training loop
