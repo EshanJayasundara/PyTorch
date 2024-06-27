@@ -1,26 +1,3 @@
-"""
-Classification Report:
-                          precision    recall  f1-score   support
-
-   bacterial_leaf_blight       0.89      0.89      0.89        80
-   bacterial_leaf_streak       0.92      0.95      0.93        80
-bacterial_panicle_blight       0.79      0.96      0.87        80
-        black_stem_borer       0.91      0.89      0.90        80
-                   blast       0.86      0.75      0.80        80
-              brown_spot       0.79      0.84      0.81        80
-            downy_mildew       0.85      0.89      0.87        80
-                   hispa       0.79      0.84      0.81        80
-             leaf_roller       0.93      0.79      0.85        80
-                  normal       0.75      0.96      0.85        80
-                  tungro       0.85      0.78      0.81        80
-        white_stem_borer       1.00      0.68      0.81        80
-       yellow_stem_borer       0.94      0.94      0.94        80
-
-                accuracy                           0.86      1040
-               macro avg       0.87      0.86      0.86      1040
-            weighted avg       0.87      0.86      0.86      1040
-"""
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -28,13 +5,10 @@ from torchvision import datasets, transforms, models
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
-from google.colab import drive
-
-drive.mount('/content/drive')
 
 # Hyperparameters
 input_size = 65536*3
-epochs = 10
+epochs = 2
 learning_rate = 0.001
 batch_size = 32
 
@@ -54,11 +28,11 @@ transform_test = transforms.Compose([
 ])
 
 # Load the training dataset
-train_dataset = datasets.ImageFolder(root='/content/drive/MyDrive/ColabNotebooks/paddy-doctor-diseases-small-400-split/train', transform=transform_train)
+train_dataset = datasets.ImageFolder(root='data/paddy-doctor-diseases-small-400-split/train', transform=transform_train)
 train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
 
 # Load the testing dataset
-test_dataset = datasets.ImageFolder(root='/content/drive/MyDrive/ColabNotebooks/paddy-doctor-diseases-small-400-split/test', transform=transform_test)
+test_dataset = datasets.ImageFolder(root='data/paddy-doctor-diseases-small-400-split/test', transform=transform_test)
 test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False)
 
 # Example of iterating through the training data
