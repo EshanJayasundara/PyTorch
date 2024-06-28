@@ -1,0 +1,7 @@
+Flask
+gunicorn
+tensorflow
+numpy
+torch
+Pillow
+torchvision
