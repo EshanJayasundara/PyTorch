@@ -1,6 +1,6 @@
-## Deployments
+## Deployment
 
-Can be found `deployments` directory.
+Guides and instructions can be found `deployments` directory.
 
 ## Performance of `TransferModelCNNTrain.py` with resnet18
 
