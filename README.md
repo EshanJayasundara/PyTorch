@@ -1,3 +1,7 @@
+## Deployments
+
+Can be found `deployments` directory.
+
 ## Performance of `TransferModelCNNTrain.py` with resnet18
 
 ### Classification Report
