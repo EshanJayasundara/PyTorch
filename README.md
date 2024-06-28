@@ -1,4 +1,4 @@
-## Performance of `TransferModelCNN.py` with resnet18
+## Performance of `TransferModelCNNTrain.py` with resnet18
 
 ### Classification Report
 
