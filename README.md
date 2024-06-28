@@ -8,7 +8,7 @@ Guides and instructions can be found `deployments` directory.
 - The model is being saved to the `deployments/transfer-model-cnn/transfer_cnn_model.pth`
 - `transfer_cnn_model.pth` is loaded at `main.py` for doing predictions
 
-### Performance of `TransferModelCNNTrain.py` with resnet18
+### Performance of the transfer-model (resnet18)
 
 #### Classification Report
 
