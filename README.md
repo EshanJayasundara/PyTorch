@@ -2,9 +2,15 @@
 
 Guides and instructions can be found `deployments` directory.
 
-## Performance of `TransferModelCNNTrain.py` with resnet18
+## Model
 
-### Classification Report
+- I have run the `TransferModelCNNTrain.py`
+- The model is being saved to the `deployments/transfer-model-cnn/transfer_cnn_model.pth`
+- `transfer_cnn_model.pth` is loaded at `main.py` for doing predictions
+
+### Performance of `TransferModelCNNTrain.py` with resnet18
+
+#### Classification Report
 
 ```
                           precision    recall  f1-score   support
@@ -28,6 +34,6 @@ bacterial_panicle_blight       0.94      0.97      0.96        80
             weighted avg       0.89      0.89      0.89      1040
 ```
 
-### Confusion Matrix
+#### Confusion Matrix
 
 <img src='images/TransferModelCNN_ConfusionMatrix.png'/>
