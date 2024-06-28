@@ -21,7 +21,7 @@ class PaddyDiseaseModel(nn.Module):
 model = PaddyDiseaseModel()
 
 # Load the model weights
-PATH = "models/transfer_cnn_model.pth"
+PATH = "deployments/transfer_model_cnn/transfer_cnn_model.pth"
 model.load_state_dict(torch.load(PATH, map_location=device))
 model.to(device)
 model.eval()
