@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, confusion_matrix, ConfusionMa
 
 # Hyperparameters
 input_size = 65536*3
-epochs = 2
+epochs = 20
 learning_rate = 0.001
 batch_size = 32
 
@@ -122,6 +122,9 @@ for epoch in range(epochs):
     val_loss /= len(test_loader)
     val_accuracy = 100 * correct / total
     print(f'Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.2f}%')
+
+FILE = "models/transfer_cnn_model.pth"
+torch.save(model.state_dict(), FILE)
 
 # Detailed evaluation
 all_labels = []

@@ -5,23 +5,23 @@
 ```
                           precision    recall  f1-score   support
 
-   bacterial_leaf_blight       0.89      0.89      0.89        80
-   bacterial_leaf_streak       0.92      0.95      0.93        80
-bacterial_panicle_blight       0.79      0.96      0.87        80
-        black_stem_borer       0.91      0.89      0.90        80
-                   blast       0.86      0.75      0.80        80
-              brown_spot       0.79      0.84      0.81        80
-            downy_mildew       0.85      0.89      0.87        80
-                   hispa       0.79      0.84      0.81        80
-             leaf_roller       0.93      0.79      0.85        80
-                  normal       0.75      0.96      0.85        80
-                  tungro       0.85      0.78      0.81        80
-        white_stem_borer       1.00      0.68      0.81        80
-       yellow_stem_borer       0.94      0.94      0.94        80
+   bacterial_leaf_blight       0.93      0.82      0.87        80
+   bacterial_leaf_streak       0.96      0.91      0.94        80
+bacterial_panicle_blight       0.94      0.97      0.96        80
+        black_stem_borer       0.94      0.96      0.95        80
+                   blast       0.82      0.89      0.85        80
+              brown_spot       0.89      0.81      0.85        80
+            downy_mildew       0.70      0.95      0.80        80
+                   hispa       0.87      0.69      0.77        80
+             leaf_roller       0.90      0.91      0.91        80
+                  normal       0.88      0.91      0.90        80
+                  tungro       0.89      0.85      0.87        80
+        white_stem_borer       0.92      0.88      0.90        80
+       yellow_stem_borer       0.96      0.96      0.96        80
 
-                accuracy                           0.86      1040
-               macro avg       0.87      0.86      0.86      1040
-            weighted avg       0.87      0.86      0.86      1040
+                accuracy                           0.89      1040
+               macro avg       0.89      0.89      0.89      1040
+            weighted avg       0.89      0.89      0.89      1040
 ```
 
 ### Confusion Matrix
